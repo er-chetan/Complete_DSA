@@ -125,14 +125,20 @@ void right_boundary(Node* root){
 }
 
 void boundary_of_tree(Node* root){
-//	left_boundary(root);
-//	bottom_boundary(root);
+	cout<<"left Boundary of tree"<<endl;
+	left_boundary(root);
+	cout<<endl;
+	cout<<"right Boundary of tree"<<endl;
 	right_boundary(root->right);
+	cout<<endl;
+	cout<<"bottom Boundary of tree"<<endl;
+	bottom_boundary(root);
 }
 
 int main(){
 	
 	int arr[]={1,2,3,4,5,INT_MIN,6,7,INT_MIN,8,INT_MIN,9,10,INT_MIN,11,INT_MIN,12,INT_MIN,13,INT_MIN,14,15,16,INT_MIN,17,INT_MIN,INT_MIN,18,INT_MIN,19,INT_MIN,INT_MIN,INT_MIN,20,21,22,23,INT_MIN,24,25,26,27,INT_MIN,28};
+//	int arr[]={4,5,2,INT_MIN,INT_MIN,3,1,6,7};
 	int n=sizeof(arr)/sizeof(arr[0]);
 	Node* root=construct(arr,n);
 	boundary_of_tree(root);

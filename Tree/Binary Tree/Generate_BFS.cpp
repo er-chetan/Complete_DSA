@@ -29,6 +29,8 @@ Node* BST(int arr[],int lo,int hi){
 	return root;
 }
 
+ 
+
 void displaypre(Node* root){
 	if(root==NULL){
 		return;
