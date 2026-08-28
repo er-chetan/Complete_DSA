@@ -24,5 +24,6 @@ int main(){
 
     if(s.find({"vishal","kumar"})!=s.end()){
         cout<<"found"<<endl;
+        cout<<"vishal"<<" "<<"kumar"<<endl;
     }
 }
